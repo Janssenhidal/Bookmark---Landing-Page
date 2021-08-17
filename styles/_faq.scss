@@ -1,0 +1,82 @@
+.faq{
+    width:80%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+.faq-text{
+    
+    text-align: center;
+    margin-top: 8rem;
+    h3{
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $dark-blue;
+        margin-bottom: 2rem;
+    }
+    p{
+        color: $grayish-blue;
+        max-width: 50ch;
+    }
+}
+.dropdowns{
+    margin-top: 4rem;
+    width: 50%;
+    margin-left:auto;
+    margin-right: auto;
+}
+hr{
+    opacity: 0.5;
+}
+summary{
+    color: $dark-blue;
+    list-style: none;
+    cursor:pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    font-size: 1.1rem;
+    &:hover{
+        color: $soft-red;
+    }
+}
+.details-content{
+    p{
+        color: $grayish-blue;
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    } 
+}
+summary::after{
+    content: url(../images/icon-arrow.svg);
+    transition:transform 0.3s ease;
+}
+
+details[open]>summary::after{
+    transform: rotate(180deg);
+}
+
+.faq-info{
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: $soft-blue;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+
+    &:hover{
+        color: $soft-blue;
+        background-color: #fff;
+        border: 2px solid $soft-blue;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .dropdowns{
+        width: 100%;
+    }
+}

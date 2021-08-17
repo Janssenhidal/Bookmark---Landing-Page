@@ -1,0 +1,18 @@
+@import '_variables.scss';
+@import '_header.scss';
+@import '_illustrate.scss';
+@import '../styles/_features';
+@import '../styles/_download.scss';
+@import '../styles/faq';
+@import '../styles/contact';
+@import '../styles/footer';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+}

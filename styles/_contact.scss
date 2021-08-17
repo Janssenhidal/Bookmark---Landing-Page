@@ -1,0 +1,104 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: $soft-blue;
+    color: #fff;
+    padding: 3rem 0rem;
+
+    p{
+        letter-spacing: 0.1rem;
+        font-size: 0.9rem;
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+    form{
+        position: relative;
+        display: flex;
+        input{
+            width: 300px;
+            padding: 0.75rem 1rem;
+            border: none;
+            font-size: 0.8rem;
+            border-radius: 0.2rem;
+            outline: none;
+        }
+        .error-icon{
+            background-image: url(../images/icon-error.svg);
+            background-repeat: no-repeat;
+            background-position-y: 0.5rem;
+            background-position-x: 260px;
+        }
+        button{
+            background-color: $soft-red;
+            color: #fff;
+            padding: 0.75rem 1rem;
+            outline: none;
+            border: none;
+            border-radius: 0.2rem;
+            font-size: 0.8rem;
+            cursor: pointer;
+            margin-left: 1rem;
+            border: 2px solid transparent;
+            &:hover{
+                background-color: #fff;
+                color: $soft-red;
+                border: 2px solid $soft-red;
+            }
+        }
+        .error{
+            top: 40px;
+            position: absolute;
+            color: #fff;
+            background-color: $soft-red;
+            width: 300px;
+            height: 30px;
+            text-align: left;
+            border-radius: 0 0 0.2rem 0.2rem;
+            display: none;
+            p{
+                font-size: 0.6rem;
+                padding-top: 0.4rem;
+                padding-left: 0.5rem;
+                font-style: italic;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .contact{
+        h2{
+            padding: 0 1rem;
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .contact{
+        form{
+            flex-direction: column;
+            gap: 2rem;
+
+            input{
+                width: 225px;
+                font-size: 0.8rem;
+            }
+            button{
+                margin: 0;
+            }
+            .error{
+                width: 225px;
+                p{
+                    padding-top: 0.5rem;
+                    font-size: 0.5rem;
+                }
+            }
+        }
+    }
+}
