@@ -23,12 +23,12 @@ Users should be able to:
   - The input field is empty
   - The email address is not formatted correctly
 
-### Screenshot
+## Screenshots
 
-## Desktop View
+### Desktop View
 ![](./desktop.png)
 
-## Mobile View
+### Mobile View
 ![](./mobile.png)
 
 ### Links
