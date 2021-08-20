@@ -8,7 +8,7 @@
   <link href="./styles/hamburger.css" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <script src="https://unpkg.com/scrollreveal@4"></script>
   <title>Bookmark landing page</title>
 </head>
 
@@ -43,8 +43,8 @@
     </ul>
   </header>
 
-  <div class="manager">
-    <div class="manager-text">
+  <div class="manager" class="transition-fade">
+    <div class="manager-text short">
       <h1>A Simple Bookmark Manager</h1>
       <p>A clean and simple interface to organize your favourite websites. Open a new
         browser tab and see your sites load instantly. Try it for free.</p>
@@ -55,7 +55,7 @@
     </div>
 
     <div class="manager-illustrate">
-      <img src="./images/illustration-hero.svg" alt="">
+      <img src="./images/illustration-hero.svg" alt="" class="medium">
       <div class="background-deco"></div>
     </div>
   </div>
@@ -75,11 +75,11 @@
       </ul>
       <div class="tab-content">
         <div id="tab1" class="active" data-tab-content>
-          <div class="tab-image">
+          <div class="tab-image medium">
             <img src="./images/illustration-features-tab-1.svg" alt="">
             <div class="background-deco"></div>
           </div>
-          <div class="tab-text">
+          <div class="tab-text short">
             <h2>Bookmark in one click</h2>
             <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
               gives you complete control over how you manage your favourite sites.</p>
@@ -122,21 +122,21 @@
         got a favourite you’d like us to prioritize.</p>
     </div>
     <div class="cards">
-      <div class="card">
+      <div class="card short">
         <img src="./images/logo-chrome.svg" alt="">
         <h4>Add to Chrome</h4>
         <p>Minimum version 62</p>
         <div class="dots"><img src="./images/bg-dots.svg" alt=""></div>
         <a href="#">Add & Install Extension</a>
       </div>
-      <div class="card card-2">
+      <div class="card card-2 medium">
         <img src="./images/logo-firefox.svg" alt="">
         <h4>Add to Firefox</h4>
         <p>Minimum version 55</p>
         <div class="dots"><img src="./images/bg-dots.svg" alt=""></div>
         <a href="#">Add & Install Extension</a>
       </div>
-      <div class="card card-3">
+      <div class="card card-3 long">
         <img src="./images/logo-opera.svg" alt="">
         <h4>Add to Opera</h4>
         <p>Minimum version 46</p>

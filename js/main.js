@@ -1,3 +1,9 @@
+window.sr = ScrollReveal();
+sr.reveal('.short', { delay: 500 });
+sr.reveal('.medium', { delay: 700 });
+sr.reveal('.long', { delay: 900 });
+
+
 const tabs = document.querySelectorAll('[data-tab-target]');
 const tabContents = document.querySelectorAll('[data-tab-content]');
 tabs.forEach(tab => {

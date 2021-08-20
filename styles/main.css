@@ -117,6 +117,16 @@ header .menu hr {
   }
 }
 
+.transition-fade {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
 .manager {
   display: -ms-grid;
   display: grid;
@@ -672,6 +682,7 @@ details[open] > summary::after {
   padding: 0.75rem 1.25rem;
   border-radius: 0.3rem;
   font-size: 0.9rem;
+  border: 2px solid transparent;
 }
 
 .faq-info:hover {
